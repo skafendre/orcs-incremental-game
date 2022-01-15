@@ -24,4 +24,8 @@ export class Building extends GameEntity {
         this.produce = building.produce
         this.costIncrement = building.costIncrement
     }
+
+    public increaseAmount() {
+        this.amount++
+    }
 }

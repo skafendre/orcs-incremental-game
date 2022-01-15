@@ -1,12 +1,9 @@
-import {GameEntity} from "~/ts/classes/abstract/GameEntity";
-import {Building} from "~/ts/classes/Building";
-import * as fs from "fs";
 import { buildings} from "~/ts/instanciation/buildings";
-
 
 export class GameInstance {
     entities = {
         buildings,
+        building2: buildings
     }
 
     constructor(save?: string) {

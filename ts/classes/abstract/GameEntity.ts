@@ -1,9 +1,12 @@
-import { UnlockCondition} from "~/ts/types/unlocks";
+import {UnlockCondition} from "~/ts/types/unlocks";
+import {GameInstance} from "~/ts/GameInstance";
+import {logger} from "~/ts/utils/logger";
+
 
 export interface GameEntityParameters {
-    initialAmount?: number,
     name: string,
     description: string,
+    initialAmount?: number,
     unlockedBy?: UnlockCondition[]
 }
 
@@ -15,7 +18,6 @@ export abstract class GameEntity {
 
     name: string
     description: string
-
 
     constructor(parameters: GameEntityParameters) {
         this.name = parameters.name
