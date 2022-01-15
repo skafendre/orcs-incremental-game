@@ -1,15 +1,8 @@
 <template>
   <div>
     <div>
-      Counter: {{ counter }}
-      <button @click="this.counter++">
-        +
-      </button>
-      <button @click="this.counter--">
-        -
-      </button>
+      Hey
     </div>
-
     <div>
       <Component1/>
       <Component2/>
@@ -18,7 +11,6 @@
 </template>
 
 <script lang="ts" setup>
-
-const counter = useCounter()
+const counter = useGame()
 </script>
 

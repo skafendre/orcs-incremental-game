@@ -1,5 +1,6 @@
-export const useCounter = () => useState<number>('counter', () => 0)
+import { GameInstance} from "~/ts/GameInstance";
 
-import { GameInstance} from "~/ts/classes/GameInstance";
+const gameInstance = new GameInstance()
+await gameInstance.initialization()
 
-export const useGame = () => useState<GameInstance>('game', () => new GameInstance(0))
+export const useGame = () => useState<GameInstance>('game', () => gameInstance)

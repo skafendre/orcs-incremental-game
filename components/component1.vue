@@ -11,6 +11,6 @@
 </template>
 
 <script lang="ts" setup>
-const game = useGame()
+  const game = useGame()
 </script>
 
